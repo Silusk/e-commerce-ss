@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, session,url_for
 import sqlite3
 import smtplib
 from email.mime.text import MIMEText
+import os
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("secret_key")
