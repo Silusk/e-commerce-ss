@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#b017cf",
+                "background-light": "#f8f6f8",
+                "background-dark": "#1e1121",
+              },
+              fontFamily: {
+                "display": ["Manrope"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+      </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center px-4 py-4 justify-between max-w-7xl mx-auto">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-primary uppercase">Elysian</h1>
+<div class="flex items-center gap-2">
+<a href="/cart" class="flex size-10 items-center justify-center rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">shopping_bag</span>
+</a>
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto">
+<div class="px-4 pt-8 pb-4">
+<h2 class="text-3xl font-light tracking-tight text-slate-900 dark:text-slate-100">Spring Collection</h2>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Curated luxury for the modern individual</p>
+</div>
+<div class="sticky top-[73px] z-40 bg-background-light dark:bg-background-dark/95 border-b border-primary/5">
+<div class="flex gap-3 p-4 overflow-x-auto no-scrollbar items-center">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/10 px-4 group hover:bg-primary/20 transition-all">
+<span class="text-slate-800 dark:text-slate-200 text-sm font-medium">Category</span>
+<span class="material-symbols-outlined text-primary text-lg">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/10 px-4 group hover:bg-primary/20 transition-all">
+<span class="text-slate-800 dark:text-slate-200 text-sm font-medium">Size</span>
+<span class="material-symbols-outlined text-primary text-lg">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/10 px-4 group hover:bg-primary/20 transition-all">
+<span class="text-slate-800 dark:text-slate-200 text-sm font-medium">Color</span>
+<span class="material-symbols-outlined text-primary text-lg">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/10 px-4 group hover:bg-primary/20 transition-all">
+<span class="text-slate-800 dark:text-slate-200 text-sm font-medium">Price</span>
+<span class="material-symbols-outlined text-primary text-lg">expand_more</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-px bg-primary/5 dark:bg-white/5 border-b border-primary/5">
+<a href="/product/silk-gown"><div class="flex flex-col bg-background-light dark:bg-background-dark p-4 group">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Elegant woman in a silk wrap dress" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCl5xiv83dzci-tOgnnJfD-10WB8fq6O0qusFPVGvjvUJH_AWhi050tIbYZsrutrP4O6NXgj79rbfcglK5jRzx3J7LuaLyMVSTgX73FIr6cJgeDhuHCjeN5b6R_mI3U1YPfeo7wiBaPIbXgL2gzfD5XuapL4923b-xjpOOrEyQcbQqaCLfwdDVNzy8cYOROM4h7EGekvTvjqnRNu6zbFz-OkgUwJ3qBWOlHlwbkjqh6hoT2_4GPWGhlnMTa9rfxib5lti1nyhTZwkU");'></div>
+<button class="absolute top-3 right-3 flex size-8 items-center justify-center rounded-full bg-white/80 dark:bg-black/40 backdrop-blur-sm text-slate-900 dark:text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="mt-4 space-y-1">
+<h3 class="text-sm font-medium text-slate-900 dark:text-slate-100">Silk Wrap Gown</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Midnight Blue</p>
+<p class="text-sm font-semibold text-primary">$420.00</p>
+</div>
+</div></a><a href="/product/cashmere-coat">
+<div class="flex flex-col bg-background-light dark:bg-background-dark p-4 group">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Beige cashmere overcoat on a hanger" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUQBJ---KNqr0Bm9Q_nfCxDZZz2kjtaNWOTeN-sNCr4oirzNs9kPTqPnkNo9BUhKe4S_-PpopGMs97NMQKT5Gr7v0vvIg3w8-Z-5rFGdG7IS1ucXzNNJ7DqSl0faPGUsGESa9cJs2R8ky9jdaSNhsMw3AQorSWJijWo3QrJHHTOeYc_BNJ5dcpsYhlAXMQ5pIcFQ-2_EREzEAdUjEFLUPI9bY305swg36TpJGfcswAFSRnsQ8j-ltstKixCk3AdB4_vPeDLdWqcWU");'></div>
+<button class="absolute top-3 right-3 flex size-8 items-center justify-center rounded-full bg-white/80 dark:bg-black/40 backdrop-blur-sm text-slate-900 dark:text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="mt-4 space-y-1">
+<h3 class="text-sm font-medium text-slate-900 dark:text-slate-100">Cashmere Overcoat</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Sand Beige</p>
+<p class="text-sm font-semibold text-primary">$850.00</p>
+</div>
+</div></a><a href="/product/trousers">
+<div class="flex flex-col bg-background-light dark:bg-background-dark p-4 group border-t border-primary/5">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Tailored black wool trousers detail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdwsCApGVKcKvdN28ciNw4TPuL8CnFvz_HDtNbxhmDa16Nhff-898Trwrzor0IA9G-i21-pg7OGEj4MbpCZmStg7IAkZ6jcL4s4zLIcT9AusKDH9-7OznMWiFucgcpFoG866IJULKQI77Uzf-CJE_3pGtJqdtaq-9_XUfa79Rk1mBeG47VkYyMavsrWEL7BhvYOjENTJf6QvcM9T5OsiT7zzlbW0TzyteYsBj3qnVFvAjEDI7pNVktoN71kn0bZRA0GANA5zsujUM");'></div>
+<button class="absolute top-3 right-3 flex size-8 items-center justify-center rounded-full bg-white/80 dark:bg-black/40 backdrop-blur-sm text-slate-900 dark:text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="mt-4 space-y-1">
+<h3 class="text-sm font-medium text-slate-900 dark:text-slate-100">Tailored Trousers</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Pure Black</p>
+<p class="text-sm font-semibold text-primary">$290.00</p>
+</div>
+</div>
+</a><a href="/product/blazer"><div class="flex flex-col bg-background-light dark:bg-background-dark p-4 group border-t border-primary/5">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Woman wearing an oversized structured blazer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBatNb48hHetbyJ9YfkWxmdJ7w5hGxNxC7dUj3tpKnei_IsSEWb7AYqhktRRnR0pyefhpKAtXL3N_sm3w-q5lf9uQGuJSVoCwnPze10Qj1Be4opx5ffQlb4f8UGJ50zDCo5ucoEmUZeSXbYUgq_wXns9TjGef880dlZyMeFRQqsYU8LGuMLTm4OVvIonSWUa41m6rjN4MxxufIgVzrkAzfHzwEYuzddRlX9WhKRvDjy8BTC8nBUFqvoyuuGDLJE6f1gLubkIBARaCo");'></div>
+<button class="absolute top-3 right-3 flex size-8 items-center justify-center rounded-full bg-white/80 dark:bg-black/40 backdrop-blur-sm text-slate-900 dark:text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="mt-4 space-y-1">
+<h3 class="text-sm font-medium text-slate-900 dark:text-slate-100">Structured Blazer</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Ivory White</p>
+<p class="text-sm font-semibold text-primary">$560.00</p>
+</div>
+</div>
+<div class="flex flex-col bg-background-light dark:bg-background-dark p-4 group border-t border-primary/5">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Luxury knit sweater texture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDF4zEwJ7U-vMl5pUuQygZh-DleE4J0FhFjPDG6BKLcUfoiha5iO3cxkjrh_zU4AWn3atMdDJDPBa1shAwTA97RxmmXQw_MsFFKkqUDk8nho4v7zH7B84dlmL_4sqnXfPGt_sPmVlT2lSW_Ag6lmZotcyiMH704EYf2xRHvTWErShgH_LV6sF6stLiK5cPrcCf0HeVGoSFNe628_cg_-XFmwTP2Al7vJdlc0Xs5T9AJhp3zmw8dQ6__OfritpsdpX0loo0qtPDvkg");'></div>
+<button class="absolute top-3 right-3 flex size-8 items-center justify-center rounded-full bg-white/80 dark:bg-black/40 backdrop-blur-sm text-slate-900 dark:text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="mt-4 space-y-1">
+<h3 class="text-sm font-medium text-slate-900 dark:text-slate-100">Merino Knit Polo</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Sage Green</p>
+<p class="text-sm font-semibold text-primary">$185.00</p>
+</div>
+</div></a>
+<a href="/product/polo"><div class="flex flex-col bg-background-light dark:bg-background-dark p-4 group border-t border-primary/5">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Premium denim jeans folded" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkjDbdDkiTq1aKskJpNddCRoZ26MCIXpUS0j1M_OBqIiIjLuVf59_coLHVXe88Gqlk5PYuANWEnaOQWDTGILiVkBe9TW2W2J-m9X2fUnhX60RczPhomcFWN9CHVBuvTQivH3odmVlk5E3epbFhXI1cj458XQK8gZh6zWeABqGUDG2L2W5gzeBmxpYZoJq2-yksnu0s05hkGlKynIwZpmCCO7VAqWwIIFFZREompf-sOphVL1AViBF21Vjfs-_F8-TzFasWgCDIwi0");'></div>
+<button class="absolute top-3 right-3 flex size-8 items-center justify-center rounded-full bg-white/80 dark:bg-black/40 backdrop-blur-sm text-slate-900 dark:text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="mt-4 space-y-1">
+<h3 class="text-sm font-medium text-slate-900 dark:text-slate-100">Raw Edge Denim</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Indigo Wash</p>
+<p class="text-sm font-semibold text-primary">$210.00</p>
+</div>
+</div></a><a href="/product/denim">
+</div>
+<div class="p-8 flex justify-center">
+<button class="px-8 py-3 rounded-xl border border-primary text-primary font-medium hover:bg-primary/5 transition-colors">
+                Load More
+            </button>
+</div>
+</main>
+<footer class="mt-aut,o border-t border-primary/10 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 py-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+<div class="col-span-2">
+<h4 class="text-lg font-bold text-primary mb-4">ELYSIAN</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed max-w-xs">
+                        Refining modern luxury through sustainable materials and timeless craftsmanship. Join our journey.
+                    </p>
+</div>
+<div>
+</a><h5 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-100 mb-4">Shop</h5>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li>New Arrivals</li>
+<li>Best Sellers</li>
+<li>Collections</li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-100 mb-4">Support</h5>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li>Contact</li>
+<li>Shipping</li>
+<li>Returns</li>
+</ul>
+</div>
+</div>
+<div class="flex border-t border-primary/5 pt-8 justify-between items-center text-xs text-slate-400">
+<p>© 2024 Elysian Fashion House</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-lg">public</span>
+<span class="material-symbols-outlined text-lg">payments</span>
+</div>
+</div>
+</div>
+</footer>
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-primary/10 lg:hidden">
+<div class="flex gap-1 px-4 pb-4 pt-2 max-w-md mx-auto">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="/home">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">home</span>
+</div>
+<p class="text-[10px] font-semibold leading-normal tracking-wide">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="/home">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">search</span>
+</div>
+<p class="text-[10px] font-medium leading-normal tracking-wide">Search</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="/home">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<p class="text-[10px] font-medium leading-normal tracking-wide">Wishlist</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="/home">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="text-[10px] font-medium leading-normal tracking-wide">Profile</p>
+</a>
+</div>
+</nav>
+<div class="h-20 lg:h-0"></div>
+</body></html>

@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AURA Fashion - Login & Registration</title><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/><script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+brand: {
+DEFAULT: '#e6195d',
+dark: '#c0124a',
+light: '#fde8ef'
+}
+},
+fontFamily: {
+sans: ['Inter','sans-serif']
+},
+borderRadius: {
+'custom':'4px'
+}
+}
+}
+}
+</script><style>
+body{
+font-family:'Inter',sans-serif;
+background-color:#f9fafb;
+-webkit-tap-highlight-color:transparent;
+}
+::-webkit-scrollbar{display:none;}
+</style></head><body class="min-h-screen flex flex-col text-slate-900"><main class="flex-grow flex flex-col items-center justify-center px-6 py-12"><div class="mb-10 text-center">
+<div class="inline-flex items-center justify-center w-16 h-16 bg-brand text-white rounded-full mb-4 shadow-lg">
+<span class="text-3xl font-bold italic">A</span>
+</div>
+<h1 class="text-2xl font-bold tracking-tight uppercase">Aura Fashion</h1>
+<p class="text-sm text-slate-500 mt-1">Elegance in every thread</p>
+</div><section class="w-full max-w-sm bg-white p-8 rounded-custom shadow-sm border border-slate-100"><div class="flex border-b border-slate-100 mb-8"><button type="button"
+class="flex-1 pb-3 text-sm font-semibold border-b-2 border-brand text-brand"
+id="loginTab"
+onclick="toggleAuth('login')">
+Log In
+</button>
+
+<button type="button"
+class="flex-1 pb-3 text-sm font-semibold border-b-2 border-transparent text-slate-400"
+id="registerTab"
+onclick="toggleAuth('register')">
+Sign Up
+</button>
+
+</div><!-- LOGIN FORM --><form class="space-y-5" id="loginForm" method="POST" action="/login"><div>
+<label class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+Email Address
+</label><input
+name="email"
+type="email"
+required
+placeholder="name@example.com"
+class="w-full px-4 py-3 rounded-custom border-slate-200 focus:ring-brand focus:border-brand text-sm"/>
+
+</div><div>
+<label class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+Password
+</label><input
+name="password"
+type="password"
+required
+placeholder="••••••••"
+class="w-full px-4 py-3 rounded-custom border-slate-200 focus:ring-brand focus:border-brand text-sm"/>
+
+</div><button
+type="submit"
+class="w-full bg-brand hover:bg-brand-dark text-white font-bold py-3 px-4 rounded-custom">
+Sign In
+</button>
+
+</form><!-- REGISTER FORM --><form class="space-y-5 hidden" id="registerForm" method="POST" action="/register"><div>
+<label class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+Full Name
+</label><input
+name="name"
+type="text"
+required
+placeholder="Jane Doe"
+class="w-full px-4 py-3 rounded-custom border-slate-200 text-sm"/>
+
+</div><div>
+<label class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+Email Address
+</label><input
+name="email"
+type="email"
+required
+placeholder="name@example.com"
+class="w-full px-4 py-3 rounded-custom border-slate-200 text-sm"/>
+
+</div><div>
+<label class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+Password
+</label><input
+name="password"
+type="password"
+required
+placeholder="Create a password"
+class="w-full px-4 py-3 rounded-custom border-slate-200 text-sm"/>
+
+</div><button
+type="submit"
+class="w-full bg-brand hover:bg-brand-dark text-white font-bold py-3 px-4 rounded-custom">
+Create Account
+</button>
+
+</form></section></main><script>
+
+function toggleAuth(mode){
+
+const loginForm=document.getElementById("loginForm")
+const registerForm=document.getElementById("registerForm")
+
+if(mode==="login"){
+loginForm.classList.remove("hidden")
+registerForm.classList.add("hidden")
+}else{
+loginForm.classList.add("hidden")
+registerForm.classList.remove("hidden")
+}
+
+}
+
+</script></body>
+</html>

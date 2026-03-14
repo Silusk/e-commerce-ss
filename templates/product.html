@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>{{product}}</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+<div class="max-w-4xl mx-auto p-10">
+
+<h1 class="text-4xl font-bold mb-6 capitalize">
+{{product}}
+</h1>
+
+<img
+src="{{image}}"
+class="rounded-xl mb-8 w-full">
+
+<p class="text-gray-600 mb-6">
+Price: ${{price}}
+</p>
+
+<button
+onclick="addToCart('{{product}}','{{image}}','{{price}}')"
+class="bg-purple-600 text-white px-8 py-4 rounded-lg">
+
+Add to Cart
+
+</button>
+
+</div>
+
+<script>
+
+function addToCart(name,image,price){
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+cart.push({
+name:name,
+image:image,
+price:price
+});
+
+localStorage.setItem("cart", JSON.stringify(cart));
+
+alert("Product added to cart");
+
+}
+
+</script>
+
+</body>
+</html>

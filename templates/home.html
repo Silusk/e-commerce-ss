@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Pantaloons Modern E-commerce</title>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .fill-current {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Sticky Top Navigation -->
+<nav class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+<h1 class="text-xl font-bold tracking-tight text-primary uppercase">Pantaloons</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">search</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">person</span>
+<div class="relative cursor-pointer">
+<span class="material-symbols-outlined hover:text-primary transition-colors">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+</div>
+</div>
+</nav>
+<!-- Hero Carousel Section -->
+<section class="relative px-4 py-4">
+<div class="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-lg group">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Summer collection fashion photography featuring models in bright attire" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDv9U2Cyx3WOsEEZ7IeohgvHm24veGDDcgzpImP4UJvK_WB3opveo0oIg609LLHpP7JSXoQm9xPzaBZdHX8MTIUGX-uy5a9ITvIaKQjRT0ohjVOlsjCI73wEy3mRwZ_fAs07s0_5Jq_h7LZJiscVAruJykVmKOZOLZUZL_OSD8YV-hm2PPEGyV5bf383-xOdcqv5studH-JweZyB-yRPINNvGOb9iCz0I3R1AMMMqTU_cM6oRQbiySRjEZ_iOquK-wYf7ru8JYqbJ0')">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/60 to-transparent"></div>
+</div>
+<div class="absolute bottom-6 left-6 text-white">
+<p class="text-sm font-medium uppercase tracking-widest mb-1">Seasonal Drop</p>
+<h2 class="text-2xl font-bold leading-tight">Summer Essentials</h2>
+<button class="mt-3 bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all">Shop Collection</button>
+</div>
+<div class="absolute bottom-4 right-6 flex gap-1">
+<div class="w-8 h-1 rounded-full bg-white"></div>
+<div class="w-2 h-1 rounded-full bg-white/40"></div>
+<div class="w-2 h-1 rounded-full bg-white/40"></div>
+</div>
+</div>
+</section>
+<!-- Categories Horizontal Scroll -->
+<section class="py-4">
+<div class="px-4 mb-3 flex items-center justify-between">
+<h3 class="font-bold text-lg">Shop by Category</h3>
+<span class="text-primary text-sm font-medium">View All</span>
+</div>
+<div class="flex overflow-x-auto px-4 gap-4 no-scrollbar pb-2">
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Stylish man in casual wear portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCucCNDbEYhMlCa4Jlj-lrYDDlwg0Ie5EMGMeg4In1YCKdbDJJ0lP9sQOPuvf_hSSCV5Zf2wikd3Js3xjyeL5FoG__ntFe881xTWFZyk417Kve7pGDJmRFfoV1_zhMVdM0wzGqHMAN4s5HqnhAM19yJrLSgu6PGcMfKuJWn0tQ5fEk5Ip61915hJOEg_UTBqm7v1Ju85ecZ2AE-e_qr3QLRi0qk2q1eL9KI0ewG-2mPStxUlY3gOv3yYhE4YT8oEdMoyMX_ytb48yM"/>
+</div>
+<span class="text-xs font-medium">Men</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Trendy woman posing in street fashion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdgLVg3MaKUucJG51idNiuSsr_oHuaF-CNoFcUfuoySN2BCY6XBnwaUI_2IveNWKVCv9RUQZi6mKA7-17DnOonST7lQshqHhwSRv5Qthq7qFsRgHH6Ei9hjf5nXtyxAOmVUKV5TZ4MyisQDohnqJ4wBSyWZa9Y0p5GRKcYOya8Rv3qNWeKvG6h96qkF0ILA0dzqKh5fmjq-TIEsmnuZnoyTl5jgbvdEEX2kscdZXxSmDPcjpRPenbPmk7SbsqZ1bpLIYUm4x2rhiA"/>
+</div>
+<span class="text-xs font-medium">Women</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Happy child running in a park" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbz1nQA3OLybv8NaPTGoFU2k_bdmY1dWeLjAnakC8Twe0HSFvjmH2C4-eOb9WMlaPqJvC6zY9cf-v4B_2eTb2JYPxtazN-EFqkNdQRU2XVHyp73eso3wPY3gl2UXXYXGt5MDtnhNvNKJNcFu8tE10ygX4ds6DUhh_Aj6bCXAAR-9aT7E1lp13n9HrCSz_RaVA8Be1B6kMy6lLgw3vHZaA1PJYSr8iyGtFvlJnGfCD8Difqt6E_c-JqmHh6hf11eKd0KSo8LzsDnr8"/>
+</div>
+<span class="text-xs font-medium">Kids</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern minimalist home interior decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXxHmAIS_199Fp0lQRvuVYGn-Mw55dOy8QIGJe9kS0wkzke18bhMktUUoVS0kyIoSRb0zQ8YGdFcfwG0n3aFFnCn2h14SUpEybPpLiZ4hZqqpoWWN370J8e6jJEh7x7nR4s8sTE4WtMJDbzBlhkk28o8UNvDGr1MTejtYcgVwKEIFuIxyDPW8mMz8dTTXeY_S1G2xYRTPtpb53iCfsbbJGEkWxZVtEyYk3CmcfC5n7Mr6Kcggeq3P8KtetO-2s6GMjc2M9pbFXNwA"/>
+</div>
+<span class="text-xs font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High-end luxury leather accessories collection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEtpnXCfePgvEFdEkwoTkj8wXfiVFxa6VaWjAao3OIfHDSAioTFbhw8Uq1kE0Zz9j8DUR8Md3bgEMH81FgF2ivB_9QPCSEpC6LjsuNnYDkPkfQE-OOBJTZOCsH3ogERdH3WjQzfDTVRJVQZC-G79lzUp27wGl9IkgaORIAtfry9s3Lq8m1003hHXJlbB5yPSxDyzv-SfF9e9V6CwZeU6kebBLkOpncv0G3XjHhv8EUN9RZY0v6abBI_GWLMgB_3t9qK86AzyE5MB4"/>
+</div>
+<span class="text-xs font-medium">Luxe</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Assorted makeup and beauty products layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtnAdhdxfisiDMLz6cS6VqRXZexBFLY8HRMQmLOzbLXOwgXpQ2HQHWEiCoGY0Brf7ucoMSXXY99jJjUzdHmq1jXjcFHoQH45JSt1T441LjNenqiJZ5syNjM0N2c7eky2N1ttQZUpxA8HOK258IvYoDTukEevmd8kiLj1o61TWfs3YHR6w0OX7r95jKH4r5nCa3e8n0hXyMP-sdHL1l7TGQl8NJcsB3uTNuYHql3Gw4jVagsQLQl8v_YIV4abZ6OiMJqSbkuRj5Xe4"/>
+</div>
+<span class="text-xs font-medium">Beauty</span>
+</div>
+</div>
+</section>
+<!-- 1. New Arrivals Grid -->
+<section class="py-8 px-4">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-bold text-lg italic">New Arrivals</h3>
+<span class="text-primary text-sm font-medium">Explore All</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Oversized Silk Shirt in white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkVlrxvEW40Zv4YYdkhmHg_J-QPHgKyZ3QeujTzVlPJzv5V0K6jR1MjX6qMOdpkRGDDIkwMRX9FU5MOTwuxfXlOPL8ii3QwufjzSAq0UtXOOrPIW5sk9rWZjWVIsvcNo5eCRS1d5ml0o49EdOYm-LXmBqsiPT7XMzWg-L8EBGvycwzkwarz7shxkrBAhzvmrL42m5nHDhKsxsN6SyPs2lXWBAGqRwU6IzCmMtUxOwQ_8xD4THN7kJzRl1Flp4-ESbw_aKxvL0SuW8"/>
+<span class="absolute top-2 left-2 bg-primary text-white text-[10px] px-2 py-0.5 font-bold rounded">NEW</span>
+</div>
+<div class="p-3">
+<h4 class="text-xs font-bold truncate">Oversized Silk Shirt</h4>
+<p class="text-primary font-bold text-sm mt-1">$45.00</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Pleated Midi Skirt in tan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_i-Gn0t3PBQjo43D9G96eyGKwQPxhwNnSfUXrb10QKhNAksBLTQ19IioLyEls0cg_usNCMxMzU-AO-Z5tbVqJJe7SJmVsSVAiKDr_GMdQ8zTnVOqODmEc7UKNce9Zrj0wJxHGP5GBVK0-6ms-iyjDWHSuFgad3eV-ZwIz_Wjv-Ug4CR5LuCt_hvH8Zd7WaCkanJDeTHa8c30p6eOPYgcnSOIXJZq3jBr7mW59iww_lqJETGBAnzaAQCPbhzowOTnO-BeISfaMYzg"/>
+</div>
+<div class="p-3">
+<h4 class="text-xs font-bold truncate">Pleated Midi Skirt</h4>
+<p class="text-primary font-bold text-sm mt-1">$52.00</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Linen Blend Trousers in olive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClsP79z7fJ-FAw3iJvFwHjZpgQ8ogcnB2Wpm369suReSqAVtIFzjQvohgc_IN4TBOJYe0hq_x0eG9dggmWDB6F5WZhO9KAgPs9PGQMUU4SaDp0c7f7LYYBJ1XklVJKdGnGjB6fj4YXw1-XTOnYMBHwDvgKqwGpAV75lAO2W7f12iMS2kXO7MZe9Bpry_yv4QAHhcFcVuoYluEgqRQ90UNy4LNNGifoAVMWkeq3qzK49YeCZUB81Q61_suGnAVXupP6CTcYJ4uSSTA"/>
+</div>
+<div class="p-3">
+<h4 class="text-xs font-bold truncate">Linen Blend Trousers</h4>
+<p class="text-primary font-bold text-sm mt-1">$68.00</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Cotton Wrap Dress with floral pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXkGwJRObzH5rvKvCf6f4kmJcAY8LW4vPfSutz0dEx4-Wyb49FL1_bOcHVm6s8Dp6tAo8NGqQT4h5K9xjf-gx8rWYOndUq1__YkaiLfbGKRjP1vf5pdQ1u_xlR88-UN_eAsQtXELekWUkZSfWbqS7rcB1gcok6Uv_BMweFiFm33Y5T1eKOpq43eoLemVWs5mBQ13eg5TgFr_80lRY8PkOhqR0G0wigfszLxiMRo604Cj6fg7VeUs72NvdIFPlJUc5Aq6oRTWxxiWA"/>
+</div>
+<div class="p-3">
+<h4 class="text-xs font-bold truncate">Cotton Wrap Dress</h4>
+<p class="text-primary font-bold text-sm mt-1">$59.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. "Complete the Look" Section -->
+<section class="py-8 bg-slate-100 dark:bg-slate-900/50">
+<div class="px-4 mb-4">
+<h3 class="font-bold text-lg">Complete the Look</h3>
+<p class="text-xs text-slate-500">Curated styles for your next occasion</p>
+</div>
+<div class="flex flex-col px-4 gap-4">
+<div class="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-md relative">
+<img class="w-full h-full object-cover" data-alt="Man in linen look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNHP_So_ZxssWlwjYK_xqh9pklyuB2ksYhtSxDFGmq759-2lWIgNv7AGDtHeizXGKcd-8zeIzdh6yCqJzLlX_BRsLq-vSV3Gtlk1AA0tvE7ROeZpM_nh7Dpr7ijqTrJMcQcLXd-FMDTpZLZsUTb5xrzVeZEUnFv9aqr7biBPYtlojr-xDQLf39RkXKYS0t0XuDaCU6JbdCdElfuEUd74F0VNhWCDLQ74mdWglivWEhDV4-ghjQk6zGQcMaFbqN_c3YlT3fRtqmjek"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<p class="text-white font-bold text-lg">Modern Minimalist</p>
+</div>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+<div class="w-32 shrink-0 bg-white dark:bg-slate-800 p-2 rounded-xl border border-slate-100 dark:border-slate-700">
+<div class="aspect-square rounded-lg overflow-hidden bg-slate-50 mb-2">
+<img class="w-full h-full object-cover" data-alt="Linen shirt thumbnail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNHP_So_ZxssWlwjYK_xqh9pklyuB2ksYhtSxDFGmq759-2lWIgNv7AGDtHeizXGKcd-8zeIzdh6yCqJzLlX_BRsLq-vSV3Gtlk1AA0tvE7ROeZpM_nh7Dpr7ijqTrJMcQcLXd-FMDTpZLZsUTb5xrzVeZEUnFv9aqr7biBPYtlojr-xDQLf39RkXKYS0t0XuDaCU6JbdCdElfuEUd74F0VNhWCDLQ74mdWglivWEhDV4-ghjQk6zGQcMaFbqN_c3YlT3fRtqmjek"/>
+</div>
+<p class="text-[10px] font-bold truncate">Linen Shirt</p>
+<p class="text-primary font-bold text-[10px]">$34.50</p>
+</div>
+<div class="w-32 shrink-0 bg-white dark:bg-slate-800 p-2 rounded-xl border border-slate-100 dark:border-slate-700">
+<div class="aspect-square rounded-lg overflow-hidden bg-slate-50 mb-2">
+<img class="w-full h-full object-cover" data-alt="Sneaker thumbnail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaw1jSnK40VGBwlie28aRmkkrJo-chlRlacd4veUIodQR-BY59J1KPx9q8NCdh8tNQHDtjtQVm0emTA_7N_tw6BCKGDXBu966B4ldIdlCQgZeqg46bn779At7AnKivTUCi8-cl8d9dOC4adzEu9eTuLojeuV4ED3UdfIReXLqItfD9n5BDNtaDy595zruhDBlVLOY5tSlUL2CDT52aTMsaycGFcuHXGEq3jgkPPbJIjaCtBsA4w8oR-CP-1Qu7EvQq6jEUaHh3aMk"/>
+</div>
+<p class="text-[10px] font-bold truncate">Iconic Sneaker</p>
+<p class="text-primary font-bold text-[10px]">$89.00</p>
+</div>
+<div class="w-32 shrink-0 bg-white dark:bg-slate-800 p-2 rounded-xl border border-slate-100 dark:border-slate-700">
+<div class="aspect-square rounded-lg overflow-hidden bg-slate-50 mb-2">
+<img class="w-full h-full object-cover" data-alt="Bag thumbnail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEtpnXCfePgvEFdEkwoTkj8wXfiVFxa6VaWjAao3OIfHDSAioTFbhw8Uq1kE0Zz9j8DUR8Md3bgEMH81FgF2ivB_9QPCSEpC6LjsuNnYDkPkfQE-OOBJTZOCsH3ogERdH3WjQzfDTVRJVQZC-G79lzUp27wGl9IkgaORIAtfry9s3Lq8m1003hHXJlbB5yPSxDyzv-SfF9e9V6CwZeU6kebBLkOpncv0G3XjHhv8EUN9RZY0v6abBI_GWLMgB_3t9qK86AzyE5MB4"/>
+</div>
+<p class="text-[10px] font-bold truncate">Leather Messenger</p>
+<p class="text-primary font-bold text-[10px]">$120.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Featured Collection Banner -->
+<section class="py-4">
+<div class="relative h-64 w-full overflow-hidden">
+<img class="w-full h-full object-cover brightness-75" data-alt="The Denim Edit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs23DuYBGwev9uAGFuqIFvzyDZcJ_wsH6aU7c8BjkQBi31e4diOQl-X01tgYOWd2Re-9T6Hc281GD5OnF4QcyBIUcZvoG870l2TPyNbi0YcSM6lFkdiBVZcTFhJ03vXewx7ZTXloem9tFaAX1Vndrl6nl7crBQncXL9w3qDRY6oQA9ZhnTmLZpcJgjVlYJEv06dG0RuOD4Lpgp3B5xgpz9VNdl8zGVtIQWOkcbS3iyhRGA6Vx7EyoMVYuAoAGl2B5Eo_IlNHHJY4g"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-6">
+<p class="uppercase tracking-[0.2em] text-xs font-semibold mb-2">Timeless Classics</p>
+<h2 class="text-3xl font-bold mb-4">The Denim Edit</h2>
+<button class="bg-white text-black px-8 py-2.5 rounded-full text-sm font-bold hover:bg-primary hover:text-white transition-colors">Shop Denim</button>
+</div>
+</div>
+</section>
+<!-- 4. Customer Reviews/Social Proof -->
+<section class="py-10 bg-white dark:bg-slate-900 overflow-hidden">
+<div class="px-4 mb-6">
+<h3 class="font-bold text-lg">What Our Shoppers Say</h3>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-yellow-400 text-sm fill-current">star</span>
+<span class="text-sm font-semibold">4.8 / 5.0</span>
+<span class="text-xs text-slate-400 ml-1">Based on 12k+ reviews</span>
+</div>
+</div>
+<div class="flex overflow-x-auto px-4 gap-6 no-scrollbar pb-4">
+<div class="w-[85%] shrink-0 bg-background-light dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700">
+<div class="flex gap-0.5 mb-3">
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+</div>
+<p class="text-sm italic text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">"Absolutely love the quality of the linen shirts. They fit perfectly and the colors are even better in person!"</p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-slate-200"></div>
+<div>
+<p class="text-xs font-bold">Sarah M.</p>
+<p class="text-[10px] text-slate-400">Verified Buyer</p>
+</div>
+</div>
+</div>
+<div class="w-[85%] shrink-0 bg-background-light dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700">
+<div class="flex gap-0.5 mb-3">
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xs fill-current">star</span>
+</div>
+<p class="text-sm italic text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">"The delivery was incredibly fast. I ordered on Monday and had my new favorite sneakers by Wednesday morning."</p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-slate-200"></div>
+<div>
+<p class="text-xs font-bold">James T.</p>
+<p class="text-[10px] text-slate-400">Verified Buyer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Brand Story/Sustainability -->
+<section class="relative h-96 w-full flex items-center justify-center">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover brightness-50" data-alt="Sustainability" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbz1nQA3OLybv8NaPTGoFU2k_bdmY1dWeLjAnakC8Twe0HSFvjmH2C4-eOb9WMlaPqJvC6zY9cf-v4B_2eTb2JYPxtazN-EFqkNdQRU2XVHyp73eso3wPY3gl2UXXYXGt5MDtnhNvNKJNcFu8tE10ygX4ds6DUhh_Aj6bCXAAR-9aT7E1lp13n9HrCSz_RaVA8Be1B6kMy6lLgw3vHZaA1PJYSr8iyGtFvlJnGfCD8Difqt6E_c-JqmHh6hf11eKd0KSo8LzsDnr8"/>
+</div>
+<div class="relative z-10 text-center px-8">
+<h3 class="text-white text-3xl font-bold mb-4">Fashion with Purpose</h3>
+<p class="text-white/90 text-sm leading-relaxed max-w-sm mx-auto mb-6">We're committed to sourcing sustainable materials and ensuring ethical practices across our entire supply chain. Fashion should feel good for you and the planet.</p>
+<button class="border-2 border-white text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-black transition-all">Our Mission</button>
+</div>
+</section>
+<!-- 6. Curated Style Guide/Blog -->
+<section class="py-10 px-4">
+<h3 class="font-bold text-lg mb-6">From the Journal</h3>
+<div class="flex flex-col gap-6">
+<div class="group flex gap-4 items-center">
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Style Blog 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNHP_So_ZxssWlwjYK_xqh9pklyuB2ksYhtSxDFGmq759-2lWIgNv7AGDtHeizXGKcd-8zeIzdh6yCqJzLlX_BRsLq-vSV3Gtlk1AA0tvE7ROeZpM_nh7Dpr7ijqTrJMcQcLXd-FMDTpZLZsUTb5xrzVeZEUnFv9aqr7biBPYtlojr-xDQLf39RkXKYS0t0XuDaCU6JbdCdElfuEUd74F0VNhWCDLQ74mdWglivWEhDV4-ghjQk6zGQcMaFbqN_c3YlT3fRtqmjek"/>
+</div>
+<div>
+<span class="text-[10px] text-primary font-bold uppercase tracking-wider">Style Guide</span>
+<h4 class="font-bold text-sm mt-1 leading-snug">5 Ways to Style Your Linen Shirt This Summer</h4>
+<p class="text-[10px] text-slate-400 mt-2 italic">3 min read</p>
+</div>
+</div>
+<div class="group flex gap-4 items-center">
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Style Blog 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT6_ACDWRkjPdvnf9hDRPM0FtXp68tnt0O-oGdGwxgvoY7vnU0X_65j34lfrncx4DUocQXHj7Timk-PRoB8NqR8-HQNcNuCAPifmj4AXyFm7zbtuAL71ix_4YAyq39Qm_cf1dO1J0vD2TQmR_44tN8bJ1I_WEcRiWK9gmNj6NuUHOeWo0c5PqtLt35qOX8OkfVqrA_dWjiObKhonXtigikdbddEbs_g6JGJnzxXs425ia_--F0-cXzCKtRBn2wQ7FB9Yh7byy0aY0"/>
+</div>
+<div>
+<span class="text-[10px] text-primary font-bold uppercase tracking-wider">Trends</span>
+<h4 class="font-bold text-sm mt-1 leading-snug">The Return of the Floral Maxi: How to Wear it Now</h4>
+<p class="text-[10px] text-slate-400 mt-2 italic">5 min read</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Instagram Feed -->
+<section class="py-10 bg-slate-50 dark:bg-slate-900/30">
+<div class="px-4 mb-4 flex items-center justify-between">
+<h3 class="font-bold text-lg">Shop Our Instagram</h3>
+<span class="text-xs font-medium text-slate-500">@pantaloons_official</span>
+</div>
+<div class="grid grid-cols-3 gap-1 px-1">
+<div class="aspect-square bg-slate-200 overflow-hidden"><img class="w-full h-full object-cover" data-alt="IG 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdgLVg3MaKUucJG51idNiuSsr_oHuaF-CNoFcUfuoySN2BCY6XBnwaUI_2IveNWKVCv9RUQZi6mKA7-17DnOonST7lQshqHhwSRv5Qthq7qFsRgHH6Ei9hjf5nXtyxAOmVUKV5TZ4MyisQDohnqJ4wBSyWZa9Y0p5GRKcYOya8Rv3qNWeKvG6h96qkF0ILA0dzqKh5fmjq-TIEsmnuZnoyTl5jgbvdEEX2kscdZXxSmDPcjpRPenbPmk7SbsqZ1bpLIYUm4x2rhiA"/></div>
+<div class="aspect-square bg-slate-200 overflow-hidden"><img class="w-full h-full object-cover" data-alt="IG 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCucCNDbEYhMlCa4Jlj-lrYDDlwg0Ie5EMGMeg4In1YCKdbDJJ0lP9sQOPuvf_hSSCV5Zf2wikd3Js3xjyeL5FoG__ntFe881xTWFZyk417Kve7pGDJmRFfoV1_zhMVdM0wzGqHMAN4s5HqnhAM19yJrLSgu6PGcMfKuJWn0tQ5fEk5Ip61915hJOEg_UTBqm7v1Ju85ecZ2AE-e_qr3QLRi0qk2q1eL9KI0ewG-2mPStxUlY3gOv3yYhE4YT8oEdMoyMX_ytb48yM"/></div>
+<div class="aspect-square bg-slate-200 overflow-hidden"><img class="w-full h-full object-cover" data-alt="IG 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtnAdhdxfisiDMLz6cS6VqRXZexBFLY8HRMQmLOzbLXOwgXpQ2HQHWEiCoGY0Brf7ucoMSXXY99jJjUzdHmq1jXjcFHoQH45JSt1T441LjNenqiJZ5syNjM0N2c7eky2N1ttQZUpxA8HOK258IvYoDTukEevmd8kiLj1o61TWfs3YHR6w0OX7r95jKH4r5nCa3e8n0hXyMP-sdHL1l7TGQl8NJcsB3uTNuYHql3Gw4jVagsQLQl8v_YIV4abZ6OiMJqSbkuRj5Xe4"/></div>
+<div class="aspect-square bg-slate-200 overflow-hidden"><img class="w-full h-full object-cover" data-alt="IG 4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT6_ACDWRkjPdvnf9hDRPM0FtXp68tnt0O-oGdGwxgvoY7vnU0X_65j34lfrncx4DUocQXHj7Timk-PRoB8NqR8-HQNcNuCAPifmj4AXyFm7zbtuAL71ix_4YAyq39Qm_cf1dO1J0vD2TQmR_44tN8bJ1I_WEcRiWK9gmNj6NuUHOeWo0c5PqtLt35qOX8OkfVqrA_dWjiObKhonXtigikdbddEbs_g6JGJnzxXs425ia_--F0-cXzCKtRBn2wQ7FB9Yh7byy0aY0"/></div>
+<div class="aspect-square bg-slate-200 overflow-hidden"><img class="w-full h-full object-cover" data-alt="IG 5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEtpnXCfePgvEFdEkwoTkj8wXfiVFxa6VaWjAao3OIfHDSAioTFbhw8Uq1kE0Zz9j8DUR8Md3bgEMH81FgF2ivB_9QPCSEpC6LjsuNnYDkPkfQE-OOBJTZOCsH3ogERdH3WjQzfDTVRJVQZC-G79lzUp27wGl9IkgaORIAtfry9s3Lq8m1003hHXJlbB5yPSxDyzv-SfF9e9V6CwZeU6kebBLkOpncv0G3XjHhv8EUN9RZY0v6abBI_GWLMgB_3t9qK86AzyE5MB4"/></div>
+<div class="aspect-square bg-slate-200 overflow-hidden"><img class="w-full h-full object-cover" data-alt="IG 6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaw1jSnK40VGBwlie28aRmkkrJo-chlRlacd4veUIodQR-BY59J1KPx9q8NCdh8tNQHDtjtQVm0emTA_7N_tw6BCKGDXBu966B4ldIdlCQgZeqg46bn779At7AnKivTUCi8-cl8d9dOC4adzEu9eTuLojeuV4ED3UdfIReXLqItfD9n5BDNtaDy595zruhDBlVLOY5tSlUL2CDT52aTMsaycGFcuHXGEq3jgkPPbJIjaCtBsA4w8oR-CP-1Qu7EvQq6jEUaHh3aMk"/></div>
+</div>
+</section>
+<!-- 8. Newsletter Signup -->
+<section class="py-12 px-6 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+<div class="text-center">
+<h3 class="text-2xl font-bold mb-2">Join the Club</h3>
+<p class="text-sm text-slate-500 mb-6">Get 15% off your first order and exclusive access to new drops.</p>
+<form class="max-w-md mx-auto flex flex-col gap-3">
+<input class="w-full px-6 py-3 rounded-full bg-slate-50 dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary/20 text-center text-sm" placeholder="Your email address" type="email"/>
+<button class="w-full bg-primary text-white py-3 rounded-full font-bold text-sm shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all" type="submit">Subscribe Now</button>
+</form>
+<p class="text-[10px] text-slate-400 mt-4">By subscribing, you agree to our Terms and Privacy Policy.</p>
+</div>
+</section>
+<!-- Local Store Section (Preserved from Original) -->
+<section class="px-4 py-8 mb-4">
+<div class="bg-primary/10 rounded-2xl p-6 flex flex-col gap-4">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="font-bold text-lg">Your Nearest Store</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">Pantaloons Main Market, Mumbai</p>
+</div>
+<div class="bg-primary text-white p-2 rounded-lg">
+<span class="material-symbols-outlined">directions</span>
+</div>
+</div>
+<div class="w-full h-40 rounded-xl overflow-hidden relative border border-primary/20 bg-primary/5">
+<div class="absolute inset-0 opacity-40 grayscale" style="background-image: radial-gradient(circle, #ec5b13 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="relative">
+<div class="w-4 h-4 bg-primary rounded-full animate-ping absolute inset-0"></div>
+<div class="w-4 h-4 bg-primary rounded-full relative z-10 border-2 border-white"></div>
+</div>
+</div>
+<div class="absolute bottom-2 right-2 bg-white/90 dark:bg-background-dark/90 px-2 py-1 rounded text-[10px] font-bold shadow-sm">
+                    Open till 10:00 PM
+                </div>
+</div>
+<button class="w-full py-3 border border-primary text-primary rounded-xl font-bold hover:bg-primary/5 transition-colors">Check Inventory Near Me</button>
+</div>
+</section>
+<!-- 9. Expanded Footer Section -->
+<footer class="bg-slate-900 text-slate-300 px-6 pt-12 pb-10 rounded-t-3xl mt-10">
+<div class="grid grid-cols-2 gap-x-8 gap-y-10 mb-12">
+<div class="flex flex-col gap-3">
+<h5 class="text-white font-bold text-xs uppercase tracking-[0.15em] mb-1">Help &amp; Support</h5>
+<a class="text-xs hover:text-primary transition-colors" href="#">Track Order</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Returns &amp; Exchanges</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Shipping Policy</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">FAQs</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="text-white font-bold text-xs uppercase tracking-[0.15em] mb-1">Company</h5>
+<a class="text-xs hover:text-primary transition-colors" href="#">About Pantaloons</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Careers</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Sustainability</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Store Locator</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Gift Cards</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="text-white font-bold text-xs uppercase tracking-[0.15em] mb-1">Legal</h5>
+<a class="text-xs hover:text-primary transition-colors" href="#">Terms of Use</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Cookie Policy</a>
+<a class="text-xs hover:text-primary transition-colors" href="#">Security</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="text-white font-bold text-xs uppercase tracking-[0.15em] mb-1">Social</h5>
+<div class="flex gap-4 mt-1">
+<a class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-800 pt-8 flex flex-col items-center gap-6">
+<h1 class="text-xl font-bold tracking-widest text-white uppercase opacity-50">Pantaloons</h1>
+<p class="text-[10px] text-slate-500 text-center leading-loose">
+                © 2024 Pantaloons Fashion &amp; Retail. All Rights Reserved.<br/>
+                Member of the Aditya Birla Group.
+            </p>
+</div>
+<div class="h-16"></div> <!-- Space for bottom nav -->
+</footer>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-50 flex border-t border-primary/10 bg-background-light dark:bg-background-dark px-4 pb-4 pt-2 shadow-2xl">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined fill-current">home</span>
+</div>
+<p class="text-[10px] font-bold leading-normal uppercase">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="/collections">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">grid_view</span>
+</div>
+<p class="text-[10px] font-medium leading-normal uppercase">collection</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="/reviews">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">explore</span>
+</div>
+<p class="text-[10px] font-medium leading-normal uppercase">reviews</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="/contactus">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">loyalty</span>
+</div>
+<p class="text-[10px] font-medium leading-normal uppercase">contact us</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="/galary">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">account_circle</span>
+</div>
+<p class="text-[10px] font-medium leading-normal uppercase">galary</p>
+</a>
+</div>
+</body></html>
