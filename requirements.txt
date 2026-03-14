@@ -1,4 +1,3 @@
-﻿smtplib
+﻿sqlite3
 Flask
 gunicorn
-email.mime.text
