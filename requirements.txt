@@ -1,0 +1,4 @@
+﻿smtplib
+Flask
+gunicorn
+email.mime.text
