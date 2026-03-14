@@ -4,7 +4,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 app = Flask(__name__)
-app.secret_key = "secretkey"
+app.secret_key = os.environ.get("secret_key")
 products = {
 
     "silk-gown": {
@@ -155,8 +155,8 @@ def contact():
     email = request.form["email"]
     message = request.form["message"]
 
-    sender_email = "silus0908@gmail.com"
-    password = "akyecqscbvsyimgk"
+    sender_email = os.environ.get("email_id")
+    password = os.environ.get("app_pass)
     receiver_email = "silus09032004@gmail.com"
 
     body = f"""
