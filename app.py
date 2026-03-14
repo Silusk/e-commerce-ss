@@ -156,7 +156,7 @@ def contact():
     message = request.form["message"]
 
     sender_email = os.environ.get("email_id")
-    password = os.environ.get("app_pass)
+    password = os.environ.get("app_pass")
     receiver_email = "silus09032004@gmail.com"
 
     body = f"""
